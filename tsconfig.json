@@ -4,13 +4,19 @@
     "module": "commonjs",
     "lib": ["es6"],
     "allowJs": false,
-    "outDir": "build",  
+    "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@/functions/*": ["./functions/*"],
+      "@/types/*": ["./types/*"]
+    }
+  },
+  "include": ["src/**/*"]
 }
