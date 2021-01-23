@@ -3,7 +3,7 @@ class Player {
   public playedCard: string | undefined = undefined;
   public votedCard: string | undefined = undefined;
   public status: 'pending' | 'done' | undefined = undefined;
-  public score: number = 0;
+  public score = 0;
 
   constructor(pseudo: string) {
     this.pseudo = pseudo;
