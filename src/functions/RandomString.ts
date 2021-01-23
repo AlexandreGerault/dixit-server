@@ -1,5 +1,7 @@
+import crypto from 'crypto';
+
 const randomString = (size: number) => {
-  return Math.random().toString(36).substring(0, size);
+  return crypto.randomBytes(size).toString('base64').substring(0, size);
 };
 
 export { randomString };
