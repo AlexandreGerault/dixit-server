@@ -1,3 +1,3 @@
-const randomInList = (items: any[]) => items[Math.floor(Math.random() * items.length)];
+const randomInList = <T>(items: T[]) => items[Math.floor(Math.random() * items.length)];
 
 export { randomInList };
