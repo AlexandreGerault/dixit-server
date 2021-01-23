@@ -7,7 +7,7 @@ class Game {
   public state: GameStep = 'lobby';
   private players: Player[] = [];
 
-  public start(room: Room) {
+  public start(room: Room): void {
     room.clients.forEach((c) => {
       this.players = [];
       this.players.push(new Player(c.pseudo));
